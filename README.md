@@ -1,4 +1,4 @@
-# VoxelRank — The Modern & Anti-P2W Multiplayer Server Directory
+# VoxelRank – The Modern & Anti-P2W Multiplayer Server Directory
 
 [![Website](https://img.shields.io/badge/Website-voxelrank.com-blue?style=flat-square)](https://voxelrank.com)
 [![Add Server](https://img.shields.io/badge/List%20Server-Free-brightgreen?style=flat-square)](https://voxelrank.com/add)
