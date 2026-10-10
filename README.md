@@ -1,66 +1,58 @@
-# VoxelRank – The Modern & Anti-P2W Multiplayer Server Directory
+# VoxelRank – server list for Minecraft and 11 other games
 
-[![Website](https://img.shields.io/badge/Website-voxelrank.com-blue?style=flat-square)](https://voxelrank.com)
-[![Add Server](https://img.shields.io/badge/List%20Server-Free-brightgreen?style=flat-square)](https://voxelrank.com/add)
-[![License](https://img.shields.io/badge/License-MIT-orange?style=flat-square)](LICENSE)
+[VoxelRank](https://voxelrank.com) is a free server list where the ranking comes from player votes. You can't buy a higher rank. Sponsored slots exist, but they are always labelled and sit apart from the vote ranking.
 
-[VoxelRank](https://voxelrank.com) is an open, transparent, and community-driven multiplayer server directory. Built as an alternative to outdated, pay-to-win server lists where visibility is sold to the highest bidder, VoxelRank ranks servers organically based strictly on authentic player votes and active engagement.
+This repo holds docs and setup guides for server owners.
 
----
+## Games
 
-## 🌟 Why VoxelRank?
+Minecraft (Java, Bedrock, cross-play), Hytale, Rust, ARK, GTA V (FiveM), GTA VI, CS2, Valheim, Terraria, Palworld, DayZ and Discord communities.
 
-Traditional server lists prioritize pay-to-win monetization and paid ranking slots. VoxelRank levels the playing field for indie creators, small communities, and established networks alike.
+The site is translated into 26 languages.
 
-* **100% Free & No Paywalls:** No paid rank boosts or sponsored top spots.
-* **Organic Vote Algorithms:** Community support alone determines leaderboard ranking.
-* **1-Click Direct Join:** Connect instantly from modern game versions without copying IP addresses manually.
-* **Live Performance & Metrics:** Real-time ping, uptime tracking, and live TPS metrics.
-* **P2W Transparency:** Clear breakdowns of in-game stores and community monetization reviews.
-* **Multi-Game Support:** Minecraft, Rust, ARK: Survival Evolved, FiveM, CS2, Valheim, Terraria, Palworld, DayZ, and Discord communities.
-* **Global Accessibility:** Fully localized in 25 languages.
+## For server owners
 
----
+### Add your server
 
-## 🛠️ For Server Owners & Administrators
+1. Go to [voxelrank.com/add](https://voxelrank.com/add).
+2. Enter the address. We ping it, then fill in the version, player count and icon.
+3. Add tags, a description and a banner (an image, a GIF, or a short video we convert for you).
 
-### 1. Listing Your Server
-Adding your server takes less than 60 seconds:
-1. Head to [voxelrank.com/add](https://voxelrank.com/add).
-2. Enter your server IP, port, and supported game versions.
-3. Configure your server tags, description, and custom banner.
+Listing a server is free.
 
-### 2. NuVotifier & Automated Vote Rewards
-VoxelRank supports the standard **NuVotifier** (v1 and v2) protocol, allowing your server to automatically deliver in-game rewards whenever a player votes.
+### Vote rewards in game (Minecraft)
 
-* **Default NuVotifier Port:** `8192`
-* **Supported Protocols:** NuVotifier, Votifier
-* **Smart Voting Links:** Share custom URLs that pre-fill player usernames and display real-time cooldown timers.
+There are two ways to give players rewards for voting:
 
-### 3. Embeddable Server Status Badges
-Showcase your server's live status and vote count directly on your website or community forum using our dynamic markdown badges:
+- **The VoxelRank plugin** (Spigot, Paper, Purpur and Folia, Minecraft 1.8.8 and newer, Java 8+). Download it from [voxelrank.com/download/plugin](https://voxelrank.com/download/plugin). By default it fetches votes over HTTPS with your API key, so you don't need to open a port. It catches up on votes missed while the server was offline.
+- **NuVotifier / Votifier** (v1 and v2). Fill in your Votifier details on your listing and each vote is pushed to your server as it happens.
+
+You can also use both: Votifier for instant delivery, with the plugin as a backup. Each vote is only delivered once.
+
+### Badges and banners for your site
+
+Show your live status and votes on your website or forum:
 
 ```markdown
-[![VoxelRank Status](https://voxelrank.com/api/badge/your-server-id.svg)](https://voxelrank.com/server/your-server-id)
+[![VoxelRank](https://voxelrank.com/banner/YOUR-SLUG/badge.svg)](https://voxelrank.com/server/YOUR-SLUG)
 ```
 
----
+Replace `YOUR-SLUG` with the slug from your server's address. You can find more banner styles and ready-made embed codes in your listing's owner tools under **Promote & rewards**.
 
-## 🎮 For Players: Discovering Great Servers
+A verified, followed link back to your listing also gets you a free bump every 12 hours instead of every 24.
 
-* **Granular Filtering:** Filter by Minecraft version (Release, Snapshot, Modded), game modes (Survival, Skyblock, Factions, Vanilla, Anarchy), region, and ping.
-* **Fast Discovery Mode:** Quickly swipe through fresh and active communities.
-* **10-Second Voting:** Vote for your favorite server in seconds without mandatory account creation.
+## For players
 
----
+- Filter servers by game, version, mode, region and language.
+- Vote in a few seconds, no account needed.
+- Read reviews from players who voted for that server.
 
-## 🔗 Official Links & Resources
+## Links
 
-* **Main Platform:** [https://voxelrank.com](https://voxelrank.com)
-* **Add a Server:** [https://voxelrank.com/add](https://voxelrank.com/add)
-* **Support & Community:** Join our community channels or open an issue in this repository.
+- Website: https://voxelrank.com
+- Add a server: https://voxelrank.com/add
+- Questions or bugs: open an issue in this repo.
 
----
+## License
 
-## 📄 License
-This documentation and associated integration helpers are open-source and licensed under the [MIT License](LICENSE).
+MIT
